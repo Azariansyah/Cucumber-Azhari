@@ -7,7 +7,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import com.apiautomation.model.ResponseItem;
-import com.apiautomation.model.request.RequestItem;
 import resources.DataRequest;
 
 import java.util.Map;
@@ -18,7 +17,6 @@ public class StepDefinitions {
     private String itemId;
     private DataRequest dataRequest = new DataRequest();
     private ResponseItem responseItem;
-    private RequestItem requestItem;
 
     @Given("A list of item are available")
     public void get_all_items() {
